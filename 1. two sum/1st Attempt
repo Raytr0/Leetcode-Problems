@@ -1,0 +1,24 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        s = set()
+        int index = 0
+        int remainder
+        for i in nums:
+            remainder = target - i
+            if remainder in s:
+               break
+            else:
+                s.add(i)
+                index+=1
+#got stuck trying to figure out how to get the index from a set
+        
+            
+
+        
+
+        

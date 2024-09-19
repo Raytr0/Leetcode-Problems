@@ -1,0 +1,11 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+        pastMap = {} # val : index
+
+        for i, n in enumerate(nums): # i : n
+            diff = target - n
+            if diff in pastMap:
+                return [pastMap[diff], i]
+            pastMap[n] = i
+        return
+#Found that the hashmap is the way to go

@@ -1,0 +1,9 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+        d = dict()
+        for i in range(len(nums)):
+            d[nums[i]] = i
+        for i in nums:
+            if target - i in d:
+                return d[i],d[target-i]
+#Got stuck trying to figure out how a dictonary would work
