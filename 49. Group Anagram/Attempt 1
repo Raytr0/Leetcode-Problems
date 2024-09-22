@@ -2,3 +2,19 @@ class Solution(object):
     def groupAnagrams(self, strs):
         #Make a dictonary for the first one, check through all remaining elements, take matching ones and remove them
         #keep going until array empty
+        d = {}
+        for i in len(strs):
+            if len(strs[i]) != len(strs[i+1]):
+                
+            else:
+                for j in strs[i]:
+                    if k in d:
+                        d[k] += 1
+                    else:
+                        d[k] = 1
+            for i in strs[i]:
+            if i in d and d[i] is not 0:
+                d[i] -= 1
+            else:
+                return False
+        #Yeah kinda lost here
