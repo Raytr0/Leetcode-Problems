@@ -1,0 +1,4 @@
+class Solution(object):
+    def groupAnagrams(self, strs):
+        #Make a dictonary for the first one, check through all remaining elements, take matching ones and remove them
+        #keep going until array empty
