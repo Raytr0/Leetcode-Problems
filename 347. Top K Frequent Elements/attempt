@@ -8,3 +8,12 @@ class Solution(object):
     #Start with a dictonary
     #count and store numbers and how many times it has been recorded
     #return top after sorting
+
+    #Or?
+    #Use a list
+    #if character has not shown up before then add 1 and add to list
+    #now check every following element if it is in list, if so then +1 counter
+
+    #or?
+    #Sort array, go through one by one and count for each instance, store in dict, and then check which values are highest?
+    #store in another array and return?
