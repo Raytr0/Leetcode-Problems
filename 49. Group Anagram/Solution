@@ -4,7 +4,7 @@ class Solution(object):
         #keep going until array empty
         d = {}
         for s in strs:
-            sorted_str = ''.join(sorted(s))
+            sorted_str = sorted(s) #This just needs to be a string, using ''.join(sorted(s)) also works
             if sorted_str not in d:
                 d[sorted_str] = []
             d[sorted_str].append(s)
