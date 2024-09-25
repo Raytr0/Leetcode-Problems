@@ -11,7 +11,15 @@ class Solution(object):
                 d[i] = 1
             else:
                 d[i] += 1
-        counts_list = dict(sorted(d.items(), key=lambda item: item[1], reverse=True)[:k])
+        counts_list = dict(sorted(d.items(), key=lambda item: item[1], reverse=True)[:k])#Dont totally understand this line
+        #key = lambda item: item[1], where lambda is an anonymous function
+        #item: item[1], where d.items() returns [(key1, value1), (key2, value2), ...], so item[1] is the value1 ect
+        #Normally sorts from low to high, so reverse=True is needed
+        #[:k] slices only the indicated number starting from the beginning
+        #Difference between using dict and {}
+        #Use {} for simplicity, direct initialization, and better performance when no special requirements exist.
+        #Use dict() when you need to construct a dictionary using more complex logic, such as converting another data structure or using keyword arguments.
+
         results = []
         for num in counts_list:
             results.append(num)
