@@ -1,0 +1,15 @@
+class Solution(object):
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        s = str(s)
+        plaintext = ''.join(filter(str.isalnum, s.lower()))
+        reverseplaintext = plaintext[::-1]
+        
+        if plaintext != reverseplaintext:
+            return False
+        else:
+            return True
+            
