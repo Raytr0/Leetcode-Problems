@@ -1,0 +1,12 @@
+def solution(numbers):
+    comparedArr= []
+    for i in range(len(numbers)-2):
+        a = numbers[i]
+        b = numbers[i+1]
+        c = numbers[i+2]
+        if (a < b and b > c) or (a > b & b < c):
+            comparedArr.append(1)
+        else:
+            comparedArr.append(0)
+    return comparedArr
+        
